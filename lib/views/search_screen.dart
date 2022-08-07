@@ -130,7 +130,8 @@ class SearchItem extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const Conversation(),
+            builder: (context) =>
+                Conversation(chatRoomId: chatRoomID, myName: myName),
           ),
         );
       }
